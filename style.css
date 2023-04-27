@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+
+.gameContainer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 5vw 0 15px 0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    margin-left: auto;
+}
+
+
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box:hover{
+    background-color: rgb(159, 154, 154)
+}
+
+
+.info {
+    font-size: 22px;
+}
+
+
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: auto;
+}
+
+
+.gameinfo h1{
+    font-size: 2.5rem;
+}
+
+
+.gif img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+
+.br-0{
+    border-right: 0;
+}
+
+
+.bl-0{
+    border-left: 0;
+}
+
+
+.bt-0{
+    border-top: 0;
+}
+
+
+.bb-0{
+    border-bottom: 0;
+}
+
+
+
+#reset{
+margin: 0;
+padding: 0.25vw 1vw 0.25vw 1vw;
+border-radius: 4px;
+background-color: black;
+color: white;
+border: double rgb(235, 106, 106);
+}
+
+
+#reset:hover{
+    margin: 0;
+    padding: 0.50vw 1vw 0.5vw 1vw;
+    border-radius: 4px;
+    background-color: white;
+    color: Black;
+    border: double rgb(235, 106, 106);
+    font-size: large;
+}
+
+
+@media screen and (max-width:800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+
+    .gameinfo{
+        margin-top: 34px;
+    }
+
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
+
+.foot{
+    background-color: black;
+    color: white;
+    padding-bottom: 4vw;
+    display: flex;
+}
+
+.foot p{
+    margin-left: auto;
+    margin-right: auto;
+}
